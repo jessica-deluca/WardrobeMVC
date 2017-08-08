@@ -22,3 +22,81 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* NAVBAR */
+
+#navLogo {
+    width: 60px;
+}
+
+#navLogoText {
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-bottom: 0px;
+    float: left;
+    margin-right: 0px;
+    margin-top: 12px;
+}
+
+#navBar.navbar.navbar-fixed-top {
+    background-color:#CD5CC5;
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+#navBar a {
+    color: #FFFFFF;
+}
+
+span.icon-bar {
+    border: 1px solid #FFFFFF;
+}
+
+#navBar a:hover {
+    background: none;
+}
+
+button.navbar-toggle {
+    border: 1px solid #FFFFFF;
+}
+
+/* HOME INDEX - JUMBOTRON SECTION */
+
+.mainSec {
+    background-image: url('images/DogSunglasses.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding-bottom: 200px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+#homeHeader {
+    text-align: right;
+    color: #FFFFFF;
+}
+
+#homeButton {
+    text-align: right;
+}
+
+.homeCTA {
+    background-color: #CD5CC5;
+    border: solid;
+    border-color: #FFFFFF;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    color: #FFFFFF;
+}
+
+.sectionHeader {
+    color: #CD5CC5;
+}
+
+.sectionButton {
+    border-color: #CD5CC5;
+}
