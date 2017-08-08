@@ -1,63 +1,53 @@
 ﻿@model IEnumerable<WardrobeMVC.Models.Bottom>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Bottoms";
 }
 
-<h2>Index</h2>
+<h2 id="categoryHeader">Bottoms</h2>
 
-<p>
+<div class="alert alert-info alert-dismissible" style="font-family: 'Source Sans Pro', sans-serif;">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+    All bottoms now <strong>10% off</strong>! Use promo code <strong>PUPBOTTOM10</strong> at check out!
+</div>
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+            <h1 id="itemName">
+                @Html.DisplayFor(modelItem => item.Name)
+            </h1>
+
+            @*put this in photo field: ~/Content/images/pinkboardshorts.jpg*@
+            @*put this in photo field: ~/Content/images/tutu.jpg*@
+
+            <p>
+                <img style="height: 193px" src="@Url.Content(item.Photo)" class="img-thumbnail img-responsive" />
+
+            </p>
+
+            <h4 id="propertiesText">
+                Color: @Html.DisplayFor(modelItem => item.Color)
+            </h4>
+
+            <h4 id="propertiesText">
+                Type: @Html.DisplayFor(modelItem => item.Type)
+            </h4>
+
+            <p id="propertiesText">
+                @Html.ActionLink("Edit", "Edit", new { id = item.BottomID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.BottomID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.BottomID })
+            </p>
+
+        </div>
+    }
+
+</div>
+
+<p id="propertiesText">
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Type)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Color)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Season)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Occassion)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Photo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Type)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Color)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Season)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Occassion)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.BottomID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.BottomID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.BottomID })
-        </td>
-    </tr>
-}
-
-</table>

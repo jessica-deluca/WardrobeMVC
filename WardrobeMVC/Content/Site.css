@@ -35,7 +35,9 @@ textarea {
     margin-bottom: 0px;
     float: left;
     margin-right: 0px;
-    margin-top: 12px;
+    margin-top: 10px;
+    font-family: 'Chewy', cursive;
+    font-size: 32px;
 }
 
 #navBar.navbar.navbar-fixed-top {
@@ -43,6 +45,8 @@ textarea {
     margin-top: 0px;
     padding-top: 10px;
     margin-bottom: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
 }
 
 #navBar a {
@@ -76,10 +80,12 @@ button.navbar-toggle {
 #homeHeader {
     text-align: right;
     color: #FFFFFF;
+    font-family: 'Chewy', cursive;
 }
 
 #homeButton {
     text-align: right;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .homeCTA {
@@ -91,23 +97,38 @@ button.navbar-toggle {
     border-left-width: 1px;
     border-bottom-width: 1px;
     color: #FFFFFF;
+    margin-top: 20px;
 }
 
 .sectionHeader {
     color: #CD5CC5;
+    font-family: 'Chewy', cursive;
 }
 
 .sectionButton {
     border-color: #CD5CC5;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* TOPS INDEX*/
+#subText {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
 
-#topsHeader {
+/* OTHER INDEXES */
+
+#categoryHeader {
     padding-top: 15px;
     color: #CD5CC5;
+    font-family: 'Chewy', cursive;
+    font-size: 75px;
 }
 
-.topsContent {
-    display: inline-block;
+#itemName {
+    color: #A39F9D;
+    font-family: 'Chewy', cursive;
+}
+
+#propertiesText {
+    font-family: 'Source Sans Pro', sans-serif;"
 }

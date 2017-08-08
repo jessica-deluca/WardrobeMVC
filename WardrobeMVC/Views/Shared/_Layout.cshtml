@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - PoshPup!</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
 
@@ -36,7 +37,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - PoshPup! Inc.</p>
+            <p style="font-family: 'Source Sans Pro', sans-serif;">&copy; @DateTime.Now.Year - PoshPup! Inc.</p>
         </footer>
     </div>
 
