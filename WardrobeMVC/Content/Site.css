@@ -100,3 +100,14 @@ button.navbar-toggle {
 .sectionButton {
     border-color: #CD5CC5;
 }
+
+/* TOPS INDEX*/
+
+#topsHeader {
+    padding-top: 15px;
+    color: #CD5CC5;
+}
+
+.topsContent {
+    display: inline-block;
+}

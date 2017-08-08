@@ -205,8 +205,18 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\argylesocks.jpg" />
+    <Content Include="Content\images\bow.jpg" />
     <Content Include="Content\images\DogSunglasses.jpg" />
+    <Content Include="Content\images\fauxfurcoat.jpg" />
+    <Content Include="Content\images\jestercollar.jpg" />
+    <Content Include="Content\images\leopardshoes.jpg" />
     <Content Include="Content\images\pawprint.png" />
+    <Content Include="Content\images\pinkboardshorts.jpg" />
+    <Content Include="Content\images\scarf.jpg" />
+    <Content Include="Content\images\strawberrysweater.jpg" />
+    <Content Include="Content\images\tshirt.jpg" />
+    <Content Include="Content\images\tutu.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
